@@ -116,7 +116,7 @@ rule-providers:
   HBO: {<<: *c, path: ./rules/HBO.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list}
 
 rules:
-  - RULE-SET,AD,REJECT
+# - RULE-SET,AD,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Apple,苹果服务
   - RULE-SET,YouTube,谷歌服务
