@@ -1,4 +1,4 @@
-# 最后更新时间: 2024-11-22 22:40
+# 最后更新时间: 2024-11-22 22:50
 name: Fork & Edit
 
 on:
@@ -32,9 +32,11 @@ jobs:
 ###### Surge
 
     - name: Copy Surge/Rules
+      env:
+        CURL_USER_AGENT: "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
+        
         # 苹果
         curl -L -o Tool-repo/Surge/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Surge/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -210,9 +212,11 @@ jobs:
 ###### Clash
 
     - name: Copy Clash/Rules
+      env:
+        CURL_USER_AGENT: "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
+        
         # 流媒体
         cp -r Tool-repo/Surge/Rules/Emby.list Tool-repo/Clash/Rules/Emby.list
         curl -L -o Tool-repo/Clash/Rules/TikTok.list "https://kelee.one/Tool/Loon/Rule/TikTok.list"
@@ -368,9 +372,11 @@ jobs:
 ###### QuantumultX
 
     - name: Copy QuantumultX/Rules
+      env:
+        CURL_USER_AGENT: "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
+        
         curl -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Lan.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -495,9 +501,10 @@ jobs:
 ###### Loon
 
     - name: Copy Loon/Rules
+      env:
+        CURL_USER_AGENT: "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
         curl -L -o Tool-repo/Loon/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Loon/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -616,9 +623,10 @@ jobs:
 ###### Shadowrocket
 
     - name: Copy Shadowrocket/Rules
+      env:
+        CURL_USER_AGENT: "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
         curl -L -o Tool-repo/Shadowrocket/Rules/APNs.list "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -736,9 +744,10 @@ jobs:
 ###### Stash
 
     - name: Copy Stash/Rules 
+      env:
+        CURL_USER_AGENT: "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
         curl -L -o Tool-repo/Stash/Rules/APNs.yaml "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Stash/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -944,9 +953,10 @@ jobs:
 ###### Egern       
 
     - name: Copy Egern/Rules
+      env:
+        CURL_USER_AGENT: "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
       run: |
         mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
-        alias curl = curl -A "Loon/784 CFNetwork/1568.200.51 Darwin/24.1.0"
 
         curl -L -o Tool-repo/Egern/Rules/APNs.yaml "https://kelee.one/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Egern/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
