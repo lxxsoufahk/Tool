@@ -89,6 +89,6 @@ rules:
   - GEOIP,twitter,Proxy
   - GEOIP,google,Proxy
   - GEOIP,private,DIRECT
-  - GEOIP,CN,DIRECT
+  - GEOIP,cn,DIRECT
 
   - MATCH,Proxy

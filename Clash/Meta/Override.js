@@ -379,7 +379,7 @@ function main(config) {
     "GEOSITE,microsoft,微软服务",
     "GEOSITE,gfw,国外网站",
     "GEOIP,private,DIRECT",
-    "GEOIP,CN,DIRECT",
+    "GEOIP,cn,DIRECT",
     "MATCH,兜底分流"
   ];
 
